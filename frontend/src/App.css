@@ -1,0 +1,110 @@
+/* General Styles */
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Language Selector */
+.language-selector {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-selector label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.language-selector select {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Editor and Output Container */
+.editor-output-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  max-width: 1500px;
+  margin-bottom: 20px;
+}
+
+.editor-container,
+.output-container {
+  flex: 1;
+  height: 400px;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-container {
+  border: 1px solid #ccc;
+}
+
+.output-container {
+  text-align: left;
+  border: 1px solid #ccc;
+  color: #00ff00;
+  padding-left: 20px;
+  overflow: auto;
+  font-size: 20px;
+}
+/* Error Output Styling */
+.output-container.error {
+  color: #ff4d4d; /* Bright red for errors */
+  border-color: #ff4d4d; /* Optional: red border for errors */
+}
+
+
+/* Button Container */
+.button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.execute-btn {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.execute-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Output Pre Tag */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  flex: 1;
+  overflow: auto;
+}
+
